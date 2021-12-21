@@ -19,7 +19,6 @@ export = <Button<'base'>>{
     const member_roles = member.roles as GuildMemberRoleManager;
 
     const role = await member.guild.roles.fetch(roles.roles_active_live_notif);
-    console.log(role);
 
     if (role) {
       if (role.members.get(member.id)) {
